@@ -1,0 +1,21 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Salut , je suis Ramaherison Lucien'
+            }
+        }
+        stage('Developpement') {
+            steps {
+                echo 'Developpemnt du projet'
+            }
+        }
+        stage('Deployement') {
+            steps {
+                echo 'Mise en production'
+            }
+        }
+    }
+}
